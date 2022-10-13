@@ -1,0 +1,164 @@
+.logo {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.head {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 72px;
+  color: #02018c;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.desc {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #5c5e5e;
+  margin-top: 0;
+  text-align: center;
+}
+
+.tcont {
+  margin-bottom: 0;
+}
+
+.namecont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5c5e5e;
+  margin-bottom: 8px;
+}
+
+.field input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: #fbfbfb;
+  height: 56px;
+  width: 400px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 16px;
+  color: #cccccc;
+}
+
+.efield {
+  display: flex;
+  flex-direction: column;
+}
+
+.efield label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5c5e5e;
+  margin-bottom: 8px;
+}
+
+.efield input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: #fbfbfb;
+  height: 56px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 16px;
+  color: #cccccc;
+}
+
+.form button {
+  outline: none;
+  border: none;
+  background: #02018c;
+  border-radius: 8px;
+  height: 64px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 38px;
+}
+
+.notice {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #5c5e5e;
+}
+
+.noticetext {
+  color:  #02018c !important;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+  
+  .head {
+    font-size: 64px;
+    line-height: 72px;
+    text-align: left;
+  }
+  
+  .desc {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .namecont {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .field label {
+    font-size: 16px;
+  }
+
+  .efield label {
+    font-size: 16px;
+  }
+  
+}

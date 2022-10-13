@@ -1,0 +1,22 @@
+.hero {
+  background: #02018c;
+  flex: 0 0 30%;
+  min-height: 100vh;
+  position: relative;
+  display: none;
+}
+
+.curl {
+  position: absolute;
+  left: 1px;
+  top: -10.56px;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  .hero {
+    display: block;
+  }
+}

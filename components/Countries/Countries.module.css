@@ -1,0 +1,70 @@
+.modal {
+  max-width: 400px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: auto;
+  background-color: rgb(246, 247, 251);
+  margin: 10rem auto;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  outline: none;
+  border: none;
+  width: 360px;
+  height: 68px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  background-color: rgb(246, 247, 251);
+}
+
+.img img {
+  width: 50%;
+  max-width: 44px;
+  background-size: cover;
+}
+
+.flag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.modal ul {
+  list-style: none;
+}
+
+@media (max-width: 390px) {
+  .modal {
+    max-width: 380px;
+    margin: 8rem auto;
+  }
+}
+
+@media (max-width: 340px) {
+  .modal {
+    max-width: 340px;
+    margin: 7rem auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal {
+    max-width: 310px;
+  }
+
+  .img img {
+    width: 40%;
+    max-width: 54px;
+    background-size: cover;
+  }
+  
+}

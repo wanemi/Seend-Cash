@@ -1,0 +1,174 @@
+.review {
+  width: 100%;
+  height: 1078px;
+
+  padding: 1.5rem 2rem;
+  background: #f4f5f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  align-self: center;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.head h3 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #18191f;
+  margin-bottom: 0;
+}
+
+.head p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  color: #18191f;
+}
+
+.testimonies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.reviewBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+}
+
+.box {
+  background: #c4c4c4;
+  border-radius: 10px;
+  height: 132.1px;
+  width: 240.87px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.box h4 {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16.5px;
+  line-height: 22px;
+  text-align: center;
+  color: #18191f;
+  margin-bottom: 0;
+}
+
+.box p {
+  font-weight: 400;
+  font-size: 9.6px;
+  line-height: 17px;
+  text-align: center;
+  color: #18191f;
+}
+
+.name h4 {
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12.3px;
+  line-height: 19px;
+  color: #18191f;
+  margin-bottom: 0;
+}
+
+.name p {
+  font-weight: 400;
+  font-size: 9.6px;
+  line-height: 17px;
+  text-align: center;
+  color: #474a57;
+}
+
+.person {
+  margin-top: 14px;
+}
+
+@media (min-width: 768px) {
+  .review {
+    height: 650px;
+    padding: 1.5rem 3rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    align-self: center;
+  }
+
+  .head h3 {
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .head p {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .testimonies {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .box {
+    border-radius: 10px;
+    height: 192px;
+    width: 350px;
+    padding: 40px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .box h4 {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #18191f;
+    margin-bottom: 0;
+  }
+  
+  .box p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #18191f;
+  }
+
+  .name h4 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  
+  .name p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+}

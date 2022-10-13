@@ -1,0 +1,320 @@
+.second {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  height: 910px;
+}
+
+.second h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 45px;
+  color: #02018c;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.second p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #18191f;
+  margin-top: 0;
+}
+
+.boder {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -0.5rem;
+}
+
+.text h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #18191f;
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+.text p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #18191f;
+  text-align: left;
+  margin-top: 0;
+}
+
+.imgcont {
+  width: 56px;
+  height: 56px;
+  background: #f4f5f7;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.element {
+  width: 30px;
+  height: 24px;
+}
+
+.mapcont {
+  width: 100%;
+  max-width: 580px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.earth {
+  width: 100%;
+}
+
+.person1 {
+  position: absolute;
+  width: 31.75px;
+  height: 31.75px;
+  left: 74px;
+  top: -30px;
+  filter: drop-shadow(0px 30px 60px rgba(32, 32, 32, 0.1));
+}
+
+.person2 {
+  position: absolute;
+  width: 31.75px;
+  height: 31.75px;
+  left: -28.63px;
+  top: 55px;
+  filter: drop-shadow(0px 30px 60px rgba(32, 32, 32, 0.1));
+}
+
+.person3 {
+  position: absolute;
+  width: 31.75px;
+  height: 31.75px;
+  left: 74px;
+  top: 150px;
+  filter: drop-shadow(0px 30px 60px rgba(32, 32, 32, 0.1));
+}
+
+.person4 {
+  position: absolute;
+  width: 31.75px;
+  height: 31.75px;
+  left: 208px;
+  top: 55px;
+  filter: drop-shadow(0px 30px 60px rgba(32, 32, 32, 0.1));
+}
+
+.person5 {
+  position: absolute;
+  width: 31.75px;
+  height: 31.75px;
+  left: 441px;
+  top: 53px;
+  filter: drop-shadow(0px 30px 60px rgba(32, 32, 32, 0.1));
+}
+
+@media (min-width: 768px) {
+  .second {
+    height: 670px;
+  }
+
+  .second h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 0;
+  }
+
+  .second p {
+    margin-top: 1rem;
+  }
+
+  .boder {
+    flex-direction: row;
+  }
+
+  .text h3 {
+    font-size: 24px;
+    line-height: 32px;
+    align-self: flex-start;
+    margin-bottom: 0;
+  }
+
+  .text p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .imgcont {
+    width: 72px;
+    height: 72px;
+    border-radius: 100px;
+  }
+
+  .option {
+    align-items: center;
+  }
+
+  .element {
+    width: 30px;
+    height: 24px;
+  }
+
+  .text {
+    margin-top: 0rem;
+  }
+
+  .person1 {
+    width: 72px;
+    height: 72px;
+    left: 400px;
+    top: 284px;
+  }
+
+  .person2 {
+    width: 72px;
+    height: 72px;
+    left: 237px;
+    top: 5px;
+  }
+
+  .person3 {
+    width: 72px;
+    height: 72px;
+    left: 74px;
+    top: 150px;
+  }
+
+  .person4 {
+    width: 72px;
+    height: 72px;
+    left: 184px;
+    top: 300px;
+  }
+
+  .person5 {
+    width: 72px;
+    height: 72px;
+    left: 441px;
+    top: 53px;
+  }
+}
+
+@media (max-width: 375px) {
+  .person1 {
+    width: 31.75px;
+    height: 31.75px;
+    left: 74px;
+    top: -35px
+  }
+  
+  .person2 {
+    width: 31.75px;
+    height: 31.75px;
+    left: -40.63px;
+    top: 55px;
+  }
+  
+  .person3 {
+    width: 31.75px;
+    height: 31.75px;
+    left: 74px;
+    top: 120px;
+  }
+  
+  .person4 {
+    width: 31.75px;
+    height: 31.75px;
+    left: 180px;
+    top: 55px;
+  }
+  
+  .person5 {
+    position: absolute;
+    width: 31.75px;
+    height: 31.75px;
+    left: 441px;
+    top: 53px;
+  }
+  
+}
+
+@media (max-width: 340px) {
+  .second {
+    padding: 1.5rem 1.5rem;
+    height: 940px;
+  }
+
+  .person1 {
+    width: 31.75px;
+    height: 31.75px;
+    left: 54px;
+    top: -40px;
+  }
+  
+  .person2 {
+    width: 31.75px;
+    height: 31.75px;
+    left: -50.63px;
+    top: 45px;
+  }
+  
+  .person3 {
+    width: 31.75px;
+    height: 31.75px;
+    left: 54px;
+    top: 110px;
+  }
+  
+  .person4 {
+    width: 31.75px;
+    height: 31.75px;
+    left: 158px;
+    top: 45px;
+  }
+  
+  .person5 {
+    width: 31.75px;
+    height: 31.75px;
+    left: 441px;
+    top: 53px;
+  }
+  
+}
+

@@ -1,0 +1,190 @@
+.first {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background: #02018c;
+  position: inherit;
+}
+
+.curl {
+  width: 330px;
+  position: absolute;
+  opacity: 100%;
+  left: 86px;
+  top: -106px;
+  border-radius: 0px;
+  overflow-y: hidden;
+  overflow: hidden;
+}
+
+.htext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 10px;
+}
+
+.htext h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 55px;
+  color: #fbfbfb;
+  width: 214px;
+  height: 168px;
+  margin-bottom: 0;
+  margin-top: 8rem;
+}
+
+.htext p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fbfbfb;
+  width: 308px;
+  height: 180px;
+}
+
+.htext a {
+  outline: none;
+  cursor: pointer;
+  height: 64px;
+  width: 279px;
+  border-radius: 8px;
+  background: #443df6;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 90px;
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+  padding: 1.5rem 2rem;
+}
+
+.op {
+  opacity: 70%;
+  overflow: hidden;
+}
+
+.brand {
+  opacity: 70%;
+  overflow: hidden;
+  width: 80%;
+}
+
+.image {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+
+  .first {
+    padding: 1.5rem 3rem;
+  }
+
+  .htext h1 {
+    font-size: 62px;
+    line-height: 95px;
+    width: 637px;
+    height: 190px;
+    margin-top: 2rem;
+  }
+
+  .htext p {
+    font-size: 16px;
+    line-height: 32px;
+    width: 637px;
+    height: 95px;
+  }
+
+
+  .htext a {
+    margin-top: 0;
+  }
+
+  .logos {
+    gap: 55px;
+    margin-top: 90px;
+    height: 60px;
+    width: 891px;
+    padding: 16px, 0px, 16px, 0px;
+  }
+
+  .curl {
+    width: 450px;
+    left: 888.5px;
+    top: -136px;
+  }
+
+  .op {
+    opacity: 70%;
+    width: 100%;
+  }
+
+  .brand {
+    opacity: 70%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 395px) {
+  .curl {
+    width: 65%;
+    top: -70px;
+  }
+}
+
+@media (max-width: 375px) {
+  .curl {
+    width: 75%;
+    top: -100px;
+  }
+}
+
+@media (max-width: 340px) {
+  .curl {
+    width: 240px;
+    top: -100px;
+  }
+
+  .first {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .htext h1 {
+    font-size: 28px;
+    line-height: 45px;
+    width: 214px;
+    height: 168px;
+  }
+  
+  .htext p {
+    font-size: 12px;
+    line-height: 25px;
+    width: 100%;
+    height: 180px;
+  }
+
+  .htext a {
+    height: 64px;
+    width: 259px;
+    font-size: 14px;
+    margin-top: 0.8rem;
+  }
+  
+}

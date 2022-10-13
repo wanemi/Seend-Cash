@@ -1,0 +1,130 @@
+.sixth {
+  width: 100%;
+  height: 340px;
+  padding: 1.5rem 2rem;
+  background: #8D9091;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  align-self: center;
+  background-image: url("/images/mapbase.png");
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.head h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  color: #02018c;
+  width: 290px;
+  height: 80px;
+  margin-bottom: 0;
+}
+
+.head p {
+  font-weight: 400;
+  font-size: 14px;
+  width: 334px;
+  height: 96px;
+  color: #18191f;
+}
+
+.head a {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: #2097f6;
+  border-radius: 8px;
+  height: 64px;
+  width: 282px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map {
+  width: 100%;
+  display: none;
+}
+
+.image {
+  width: 95%;
+}
+
+@media (min-width: 768px) {
+  .sixth {
+    height: 505px;
+    padding: 1.5rem 3rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    align-self: center;
+    background-image: none;
+  }
+
+  .head h2 {
+    font-size: 56px;
+    line-height: 64px;
+    width: 540px;
+    height: 128px;
+    margin-bottom: 0;
+  }
+
+  .head p {
+    font-size: 18px;
+    width: 540px;
+    height: 64px;
+  }
+
+  .head a {
+    height: 64px;
+    width: 282px;
+    font-size: 16px;
+  }
+
+  .map {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media (max-width: 375px) {
+  .head h2 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+    width: 100%;
+    height: 50px;
+  }
+
+  .head p {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    height: 96px;
+  }
+
+  .head a {
+    height: 64px;
+    width: 252px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+}

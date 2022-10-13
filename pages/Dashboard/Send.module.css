@@ -1,0 +1,199 @@
+.send {
+  width: 100%;
+  padding: 3rem 1rem;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.send h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #3a4054;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.send p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #3a4054;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+}
+
+.incontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  height: 72px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.amount label {
+  color: #5d7079;
+  font-size: 0.5rem;
+  line-height: 20px;
+}
+
+.amount input {
+  outline: none;
+  width: 250px;
+  height: 38px;
+  border: none;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.btn {
+  width: 70px;
+  height: 72px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #1072eb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+}
+
+.flag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1px;
+}
+
+.img img {
+  width: 100%;
+  max-width: 84px;
+  background-size: cover;
+}
+
+.flag span {
+  font-size: 14px;
+  color: #fff;
+  line-height: 32px;
+}
+
+.dicon {
+  fill: #fff;
+  font-size: 2.5rem;
+  line-height: 32px;
+}
+
+.cta {
+  width: 228px;
+  height: 48px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #1072eb;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .send {
+    padding: 4.5rem 3rem;
+    gap: 10px;
+  }
+
+  .send h2 {
+    font-size: 32px;
+  }
+
+  .send p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .incontainer {
+    width: 480px;
+    height: 72px;
+  }
+
+  .btn {
+    width: 150px;
+    height: 72px;
+    gap: 2px;
+  }
+
+  .amount input {
+    width: 305px;
+    height: 38px;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .flag span {
+    font-size: 22px;
+    font-size: 1.25rem;
+    line-height: 32px;
+  }
+
+  .img img {
+    width: 50%;
+    max-width: 44px;
+    background-size: cover;
+  }
+
+  .amount label {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .send {
+    width: 100%;
+    padding: 3rem 0.5rem;
+  }
+
+  .incontainer {
+    width: 200px;
+  }
+
+  .amount input {
+    width: 160px;
+  }
+
+  .btn {
+    width: 70px;
+  }
+
+  .cta {
+    width: 180px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

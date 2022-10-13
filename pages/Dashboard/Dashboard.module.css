@@ -1,0 +1,149 @@
+.dashb {
+  width: 100%;
+  padding: 3.5rem 3rem;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.fdash {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 1rem;
+  align-items: center;
+  width: 332px;
+  height: 261px;
+  background: #f2f4fa;
+  border-radius: 12px;
+  padding: 2rem 2rem;
+}
+
+.globe {
+  display: none;
+}
+
+.htext h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #5c5e5e;
+}
+
+.htext p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #5c5e5e;
+}
+
+.activity h2 {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #0c0c0d;
+}
+
+.activity p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin: 0 0 0 3px;
+}
+
+.activity .show {
+  color: #1072eb;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.activity a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #02018c;
+  margin-top: 8rem;
+}
+
+@media (min-width: 768px) {
+  .globe {
+    display: block;
+  }
+
+  .htext h1 {
+    font-size: 36px;
+    line-height: 72px;
+  }
+
+  .htext p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .fdash {
+    margin-top: 2rem;
+    align-items: center;
+    width: 100%;
+    height: 260.86px;
+    background: #f2f4fa;
+    padding: 2rem 4rem;
+  }
+
+  .activity h2 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .activity p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+
+  .activity a {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .fdash {
+    width: 290px;
+    padding: 2rem 1.5rem;
+  }
+
+  .dashb {
+    padding: 3.5rem 2.5rem;
+  }
+
+}
+
+@media (max-width: 347px) {
+  .fdash {
+    width: 260px;
+    padding: 2rem 1.5rem;
+  }
+
+  .htext h1 {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  
+  .htext p {
+    font-size: 11px;
+    line-height: 24px;
+    color: #5c5e5e;
+  }
+
+  .dashb {
+    padding: 3.5rem 2rem;
+    background: #e5e5e5;
+  }
+
+}
