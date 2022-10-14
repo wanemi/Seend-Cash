@@ -40,7 +40,7 @@
 .form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
 }
 
 .field {
@@ -157,6 +157,10 @@
 
   .efield label {
     font-size: 16px;
+  }
+
+  .form {
+    gap: 15px;
   }
   
 }

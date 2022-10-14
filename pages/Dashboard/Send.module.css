@@ -16,6 +16,7 @@
   color: #3a4054;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .send p {
@@ -87,7 +88,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 1px;
+  gap: 5px;
 }
 
 .img img {
@@ -154,6 +155,10 @@
     line-height: 32px;
   }
 
+  .flag {
+    gap: 1px;
+  }
+
   .flag span {
     font-size: 22px;
     font-size: 1.25rem;
@@ -178,6 +183,10 @@
     padding: 3rem 0.5rem;
   }
 
+  .send h2 {
+    margin-top: 2rem;
+  }
+
   .incontainer {
     width: 200px;
   }
@@ -195,5 +204,9 @@
     height: 48px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .form {
+    gap: 90px;
   }
 }

@@ -59,7 +59,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
 }
 
 .text {
@@ -148,6 +148,7 @@
 
   .option {
     align-items: center;
+    gap: 20px;
   }
 }
 

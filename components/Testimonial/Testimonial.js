@@ -56,7 +56,7 @@ const Testimonial = () => {
           </div>
           <div className={classes.person}>
             <img
-              src="/images/picture.png"
+              src="/images/test2.png"
               alt="transfer"
             />
           </div>
