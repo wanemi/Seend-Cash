@@ -75,6 +75,11 @@
   flex-direction: column;
 }
 
+.efield2 {
+  display: flex;
+  flex-direction: column;
+}
+
 .efield label {
   font-weight: 400;
   font-size: 14px;
@@ -82,6 +87,15 @@
   color: #5c5e5e;
   margin-bottom: 8px;
 }
+
+.efield2 label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5c5e5e;
+  margin-bottom: 8px;
+}
+
 
 .efield input {
   width: 100%;
@@ -95,6 +109,21 @@
   line-height: 24px;
   padding-left: 16px;
   color: #cccccc;
+}
+
+.efield2 input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: #fbfbfb;
+  height: 56px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 16px;
+  color: #cccccc;
+  margin-bottom: 16px;
 }
 
 .form button {
@@ -156,6 +185,10 @@
   }
 
   .efield label {
+    font-size: 16px;
+  }
+
+  .efield2 label {
     font-size: 16px;
   }
 

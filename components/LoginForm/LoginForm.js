@@ -38,7 +38,7 @@ const LoginForm = () => {
           </p>
         </div>
         <form onSubmit={submitHandler} className={classes.form}>
-          <div className={classes.efield}>
+          <div className={classes.efield2}>
             <label htmlFor="email">Email</label>
             <input
               type="email"

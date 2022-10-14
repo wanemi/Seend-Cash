@@ -3,6 +3,7 @@ import { useRef } from "react";
 import classes from "./SignUpForm.module.css";
 import { Fragment } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 async function createUser(firstname, lastname, email, password) {
   const response = await fetch("/api/auth/signup", {
@@ -102,7 +103,11 @@ const SignUpForm = () => {
           </button>
           <p className={classes.notice}>
             I already have an account?
-            <span className={classes.noticetext}>Login</span>
+            <span className={classes.noticetext}>
+              <Link href="/Login">
+                <a>Login</a>
+              </Link>
+            </span>
           </p>
         </form>
       </Container>
