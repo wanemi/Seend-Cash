@@ -1,0 +1,35 @@
+.ring {
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+}
+
+.ring:after {
+  content: " ";
+  display: block;
+  width: 40px;
+  height: 40px;
+  
+  border-radius: 50%;
+  border: 5px solid #ffff;
+  border-color: #ffff transparent #ffff transparent;
+  animation: ring 1.2s linear infinite;
+}
+
+.spinner {
+  height: 50%;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

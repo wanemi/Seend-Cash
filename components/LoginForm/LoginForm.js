@@ -1,11 +1,14 @@
+import React, { useState } from "react";
 import Container from "../UI/Container";
 import classes from "./LoginForm.module.css";
+import LoadingState from "../UI/LoadingState";
 import { Fragment } from "react";
 import { signIn } from "next-auth/client";
 import { useRef } from "react";
 import { useRouter } from "next/router";
 
 const LoginForm = () => {
+  const [loadedPlace, setLoadedPlace] = useState(true);
   const emailinputRef = useRef();
   const passwordinputRef = useRef();
   const router = useRouter();
@@ -14,6 +17,7 @@ const LoginForm = () => {
     event.preventDefault();
     const enteredEmail = emailinputRef.current.value;
     const enteredPassword = passwordinputRef.current.value;
+    setLoadedPlace(false);
 
     const result = await signIn("credentials", {
       redirect: false,
@@ -44,6 +48,7 @@ const LoginForm = () => {
               type="email"
               name="email"
               placeholder="Enter Your Email"
+              autoComplete="off"
               ref={emailinputRef}
             />
           </div>
@@ -53,11 +58,17 @@ const LoginForm = () => {
               type="password"
               name="password"
               placeholder="Enter Your Password"
+              autoComplete="off"
               ref={passwordinputRef}
             />
           </div>
           <button>
-            <span>Login</span>
+            {loadedPlace && <span>Login</span>}
+            {!loadedPlace && (
+              <span>
+                <LoadingState />
+              </span>
+            )}
           </button>
         </form>
       </Container>

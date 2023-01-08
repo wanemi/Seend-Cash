@@ -1,5 +1,7 @@
 import Container from "../UI/Container";
+import React, { useState } from "react";
 import { useRef } from "react";
+import LoadingState from "../UI/LoadingState";
 import classes from "./SignUpForm.module.css";
 import { Fragment } from "react";
 import { useRouter } from "next/router";
@@ -24,6 +26,7 @@ async function createUser(firstname, lastname, email, password) {
 }
 
 const SignUpForm = () => {
+  const [loadedPlace, setLoadedPlace] = useState(true);
   const firstnameRef = useRef();
   const lastnameRef = useRef();
   const emailinputRef = useRef();
@@ -36,6 +39,7 @@ const SignUpForm = () => {
     const enteredLastName = lastnameRef.current.value;
     const enteredEmail = emailinputRef.current.value;
     const enteredPassword = passwordinputRef.current.value;
+    setLoadedPlace(false);
 
     const result = await createUser(
       enteredFirstName,
@@ -68,6 +72,7 @@ const SignUpForm = () => {
                 name="firstname"
                 placeholder="First Name"
                 ref={firstnameRef}
+                autoComplete="off"
               />
             </div>
             <div className={classes.field}>
@@ -77,6 +82,7 @@ const SignUpForm = () => {
                 name="lastname"
                 placeholder="Last Name"
                 ref={lastnameRef}
+                autoComplete="off"
               />
             </div>
           </div>
@@ -87,6 +93,7 @@ const SignUpForm = () => {
               name="email"
               placeholder="Enter Your Email"
               ref={emailinputRef}
+              autoComplete="off"
             />
           </div>
           <div className={classes.efield}>
@@ -96,10 +103,16 @@ const SignUpForm = () => {
               name="password"
               placeholder="Enter Your Password"
               ref={passwordinputRef}
+              autoComplete="off"
             />
           </div>
           <button>
-            <span>Create Account</span>
+            {loadedPlace && <span>Create Account</span>}
+            {!loadedPlace && (
+              <span>
+                <LoadingState />
+              </span>
+            )}
           </button>
           <p className={classes.notice}>
             I already have an account?
